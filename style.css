@@ -1,0 +1,32 @@
+.heading{
+    text-align: center;
+    font-style: italic;
+    text-decoration-color: rgb(103, 255, 80);
+}
+
+.image {
+    width: 80px;
+    height: 100px;
+    border-radius: 8px;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column count and minimum width as needed */
+    grid-gap: 20px; /* Set the gap between images */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    width: 220px;
+    height: auto;
+  }
+  .image-grid img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+  }
+  
